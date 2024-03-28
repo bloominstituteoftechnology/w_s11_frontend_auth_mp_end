@@ -1,12 +1,12 @@
 {
-  "name": "react-project",
+  "name": "client-side-auth-end",
   "version": "0.0.1",
   "scripts": {
     "dev": "fkill :9009 :3003 -f -s && concurrently \"npm:backend\" \"npm:frontend\"",
     "test": "jest --watchAll --verbose",
     "build": "cross-env NODE_ENV=production webpack",
     "frontend": "webpack serve --open",
-    "backend": "nodemon backend/server.js",
+    "backend": "node backend/server.js",
     "start": "npm run backend"
   },
   "devDependencies": {
@@ -56,5 +56,10 @@
   "engines": {
     "node": ">=18.x",
     "npm": ">=9.x"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloominstituteoftechnology/w_s11_frontend_auth_mp_end.git"
+  },
+  "license": "MIT"
 }
